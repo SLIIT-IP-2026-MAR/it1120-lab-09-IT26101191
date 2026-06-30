@@ -1,0 +1,28 @@
+public class IT26101191Lab9Q3 {
+    public static int add(int x, int y) {
+        return x + y;
+    }
+    public static int multiply(int x, int y) {
+        return x * y;
+    }
+    public static int square(int x) {
+        return x * x;
+    }
+    public static void main(String[] args) {
+		
+        int part1 = multiply(3, 4);      
+        int part2 = multiply(5, 7);      
+        int sum1 = add(part1, part2);    
+        int result1 = square(sum1);      
+
+        System.out.println("Result of (3 * 4 + 5 * 7)² : " + result1);
+
+        int sum2 = add(4, 7);            
+        int sum3 = add(8, 3);            
+        int square1 = square(sum2);      
+        int square2 = square(sum3);      
+        int result2 = add(square1, square2);
+
+        System.out.println("Result of (4 + 7)² + (8 + 3)² : " + result2);
+    }
+}
